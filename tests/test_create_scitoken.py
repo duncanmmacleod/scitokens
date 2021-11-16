@@ -10,9 +10,9 @@ import shutil
 
 # Allow unittests to be run from within the project base.
 if os.path.exists("src"):
-    sys.path.append("src")
+    sys.path.insert(0, "src")
 if os.path.exists("../src"):
-    sys.path.append("../src")
+    sys.path.insert(0, "../src")
 
 import scitokens
 from cryptography.hazmat.primitives.asymmetric.rsa import generate_private_key

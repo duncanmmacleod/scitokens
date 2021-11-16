@@ -16,9 +16,9 @@ import tempfile
 
 # Allow unittests to be run from within the project base.
 if os.path.exists("src"):
-    sys.path.append("src")
+    sys.path.insert(0, "src")
 if os.path.exists("../src"):
-    sys.path.append("../src")
+    sys.path.insert(0, "../src")
 
 from scitokens.utils import long_from_bytes
 
